@@ -1,0 +1,45 @@
+#sec-content {
+    margin-bottom: 20px;
+}
+
+.sec-article {
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    background-color:#cacabd;
+}
+
+.sec-article img {
+    display:none;
+    width:100%;
+}
+
+.sec-article h2 {
+    padding-left: 3px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sec-article a {
+    padding:0px 3px 5px 3px;
+    font-weight: bold;
+}
+
+.sec-article a:hover {
+    color:#ff7400;
+}
+
+@media(min-width:768px){
+    #sec-content {
+        flex:28%;
+        order:1;
+    }
+    #sec-content h2 {
+        padding:8px 0 8px 3px;
+    }
+    #sec-content img {
+        display:flex;
+        }
+}
+

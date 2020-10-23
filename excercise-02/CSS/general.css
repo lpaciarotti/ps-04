@@ -1,0 +1,31 @@
+/*General styles for the HTML */
+
+body {
+    min-width: 360px;
+    margin:0 20px 0 20px;
+    background-color: #f8f5e1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.area-title {
+    display:block;
+    width:100px;
+    margin:5px 0 0 0;
+    padding: 4px 6px 4px 6px;
+    background-color: #ff6500;
+    color:#ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+@media(min-width:768px){
+    .content {
+        flex-direction:row;
+        padding-top: 8px;
+    }
+}

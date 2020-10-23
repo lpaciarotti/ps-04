@@ -1,0 +1,9 @@
+#advertisements img {
+    width:100%;
+}
+@media(min-width:768px){
+    #advertisements {
+        flex:20%;
+        order:3;
+    }
+}

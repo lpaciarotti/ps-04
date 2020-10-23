@@ -1,0 +1,35 @@
+#main-content {
+    margin-bottom: 20px;
+}
+.article {
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    background-color:#f1f1df;
+}
+.article img {
+    width:100%;
+}
+.article h2 {
+    padding:5px 3px 0 3px;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+.article p {
+    padding:5px 3px 0 3px;
+    margin-top: 0;
+}
+.article a {
+    padding:5px 3px 5px 3px;
+    font-weight: bold;
+}
+.article a:hover {
+    color:#ff7400;
+}
+@media(min-width:768px){
+    #main-content {
+        flex:50%;
+        order:2;
+        margin: 0 10px 0 10px;
+    }
+}
