@@ -22,3 +22,7 @@
         var adjective = 'Impressive';
         var newAdjective = adjective.substring(0,5);
         console.log(newAdjective);
+    //c
+        var adjectiveC = 'Environmental';
+        var newAdjectiveC = adjectiveC.substring(10,13);
+        console.log(newAdjectiveC);
