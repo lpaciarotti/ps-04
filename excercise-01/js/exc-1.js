@@ -9,6 +9,8 @@
         var name = 'Lautaro';
         var lastName = 'Paciarotti';
         var idPerson = name + lastName;
-        
-        
-        console.log(idPerson);
+     //c
+        var country = 'China';
+        var city = 'Wuhan';
+        var locPlace = country.length+city.length;   
+        console.log(locPlace);
