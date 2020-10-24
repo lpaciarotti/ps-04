@@ -62,5 +62,7 @@
         months.shift();
         months.pop();
     //e
-        monts = months.reverse();
+        months = months.reverse();
         console.log(months);
+    //f
+        console.log(months.join('-'));
