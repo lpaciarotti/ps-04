@@ -21,8 +21,14 @@
     //b
         var adjective = 'Impressive';
         var newAdjective = adjective.substring(0,5);
-        console.log(newAdjective);
+        
     //c
         var adjectiveC = 'Environmental';
         var newAdjectiveC = adjectiveC.substring(10,13);
-        console.log(newAdjectiveC);
+    //d
+        var teamD = 'anderlecht'
+        var firstLetter = teamD.substring(0,1);
+        firstLetter = firstLetter.toUpperCase();
+        var restLetters = teamD.substring(1,10);
+        var teamDUpCase = firstLetter+restLetters;
+        console.log(teamDUpCase);
