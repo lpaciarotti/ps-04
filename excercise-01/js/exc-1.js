@@ -17,5 +17,8 @@
 //Excercise 2
     //a
         var team = 'Manchester';
-
         console.log(team.toUpperCase());
+    //b
+        var adjective = 'Impressive';
+        var newAdjective = adjective.substring(0,5);
+        console.log(newAdjective);
