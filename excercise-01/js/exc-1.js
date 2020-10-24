@@ -31,4 +31,7 @@
         firstLetter = firstLetter.toUpperCase();
         var restLetters = teamD.substring(1,10);
         var teamDUpCase = firstLetter+restLetters;
-        console.log(teamDUpCase);
+    //e 
+        var teamUK ='FC Manchester United';
+        var blankSpace = teamUK.indexOf(' ');
+        console.log(blankSpace);
