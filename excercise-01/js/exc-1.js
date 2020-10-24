@@ -66,3 +66,7 @@
         console.log(months);
     //f
         console.log(months.join('-'));
+    //g
+        var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+        var monthsCopy = months.slice(4,11);
+        console.log(monthsCopy);
