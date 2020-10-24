@@ -52,4 +52,10 @@
         var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
         console.log(months[4]);
         console.log(months[10]);
-    
+    //b
+        monts = months.sort();
+        console.log(months);
+    //c
+        months.unshift('Start');
+        months.push('End');
+        console.log(months);
