@@ -46,5 +46,10 @@
         var restLetters2 = uDegree.substring(wSpace+2,lastL);
         var uDegreeCapital = firstLetter1+restLetters1+' '+firstLetter2+restLetters2;
         console.log(uDegreeCapital);
-        
+
+//Excercise 3
+    //a
+        var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+        console.log(months[4]);
+        console.log(months[10]);
     
