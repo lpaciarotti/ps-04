@@ -34,4 +34,17 @@
     //e 
         var teamUK ='FC Manchester United';
         var blankSpace = teamUK.indexOf(' ');
-        console.log(blankSpace);
+    //f
+        var uDegree = 'mechanical engineering';
+        var wSpace = uDegree.indexOf(' ');
+        var firstLetter1 = uDegree.substring(0,1);
+        firstLetter1 = firstLetter1.toUpperCase();
+        var firstLetter2 = uDegree.substring(wSpace+1,wSpace+2);
+        firstLetter2 = firstLetter2.toUpperCase();
+        var restLetters1 = uDegree.substring(1,wSpace);
+        var lastL = uDegree.length;
+        var restLetters2 = uDegree.substring(wSpace+2,lastL);
+        var uDegreeCapital = firstLetter1+restLetters1+' '+firstLetter2+restLetters2;
+        console.log(uDegreeCapital);
+        
+    
