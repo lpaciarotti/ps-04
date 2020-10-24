@@ -12,5 +12,10 @@
      //c
         var country = 'China';
         var city = 'Wuhan';
-        var locPlace = country.length+city.length;   
-        console.log(locPlace);
+        var locPlace = country.length+city.length;
+        
+//Excercise 2
+    //a
+        var team = 'Manchester';
+
+        console.log(team.toUpperCase());
