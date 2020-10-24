@@ -59,3 +59,8 @@
         months.unshift('Start');
         months.push('End');
         console.log(months);
+    //d
+        //c
+        months.shift();
+        months.pop();
+        console.log(months);
