@@ -58,9 +58,9 @@
     //c
         months.unshift('Start');
         months.push('End');
-        console.log(months);
     //d
-        //c
         months.shift();
         months.pop();
+    //e
+        monts = months.reverse();
         console.log(months);
