@@ -122,8 +122,22 @@
         console.log(numberList);
 //Excercise 6
     //a
-        function suma(a,b) {
+        /*function suma(a,b) {
             return a+b;
         }
         c = suma(23916,12772);
-        console.log(c);
+        console.log(c);*/
+    //b
+        function suma(a,b) {
+            if (typeof a !='number'){
+                alert('One or more parameters are not a number');
+                return NaN;
+            } else if(typeof b !='number') {
+                alert('One or more parameters are not a number');
+                return NaN;
+            } else {
+            return a+b;
+            }
+        }
+        d = suma(23916,'12772');
+        console.log(d);
