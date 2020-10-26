@@ -120,3 +120,10 @@
             numberList[i]=i;
         }
         console.log(numberList);
+//Excercise 6
+    //a
+        function suma(a,b) {
+            return a+b;
+        }
+        c = suma(23916,12772);
+        console.log(c);
