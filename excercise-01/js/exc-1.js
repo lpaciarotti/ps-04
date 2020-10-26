@@ -69,4 +69,10 @@
     //g
         var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
         var monthsCopy = months.slice(4,11);
-        console.log(monthsCopy);
+//Excercise 4
+    //a
+        if (Math.random()>=5){
+                alert("Greater than 5");
+            }     
+                alert("Lower than 0,5");
+        
