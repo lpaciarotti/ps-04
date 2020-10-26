@@ -130,14 +130,22 @@
     //b
         function suma(a,b) {
             if (typeof a !='number'){
-                alert('One or more parameters are not a number');
-                return NaN;
+                //alert('One or more parameters are not a number');
+                return Number.NaN;
             } else if(typeof b !='number') {
-                alert('One or more parameters are not a number');
-                return NaN;
+                //alert('One or more parameters are not a number');
+                return Number.NaN;
             } else {
             return a+b;
             }
         }
         d = suma(23916,'12772');
-        console.log(d);
+        //console.log(d);
+    //c
+        function validateInteger (j) {
+            if (Number.isInteger(j)) {
+                return 'True';
+            }
+            return 'False'
+        }
+    
