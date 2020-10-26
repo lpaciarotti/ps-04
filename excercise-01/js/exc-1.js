@@ -71,7 +71,7 @@
         var monthsCopy = months.slice(4,11);
 //Excercise 4
     //a
-        if (Math.random()>=5){
+        /*if (Math.random()>=5){
                 alert("Greater than 5");
             }     
                 alert("Lower than 0,5");
@@ -92,4 +92,11 @@
             alert("Adulto mayor")
         } else {
             alert("Anciano");
+        }*/
+//Excercise 5
+    //a
+        var wordList = ['This','is','an','automatic','alert'];
+        for (var i =0; i<5; i++){
+            //alert(wordList[i]);
         }
+    
