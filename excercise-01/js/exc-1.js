@@ -113,4 +113,10 @@
         for (var i =0; i<5; i++){
             sentence= sentence+' '+wordList[i];
         }
-        alert(sentence);
+        //alert(sentence);
+    //d
+        var numberList = [];
+        for (var i=0; i<10; i++){
+            numberList[i]=i;
+        }
+        console.log(numberList);
