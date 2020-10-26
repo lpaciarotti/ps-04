@@ -97,7 +97,7 @@
     //a
         var wordList = ['this','is','an','automatic','alert'];
         for (var i =0; i<5; i++){
-            alert(wordList[i]);
+            //alert(wordList[i]);
         }
     //b
         var wordList = ['this','is','an','automatic','alert'];
@@ -106,6 +106,11 @@
             var firstLetter = wordList[i].substring(0,1);
             firstLetter = firstLetter.toUpperCase();
             var restLetters = wordList[i].substring(1,lastL);
-            alert(firstLetter+restLetters);
+            //alert(firstLetter+restLetters);
         }
-        
+    //c
+        var sentence = ' ';
+        for (var i =0; i<5; i++){
+            sentence= sentence+' '+wordList[i];
+        }
+        alert(sentence);
