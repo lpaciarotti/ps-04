@@ -95,8 +95,17 @@
         }*/
 //Excercise 5
     //a
-        var wordList = ['This','is','an','automatic','alert'];
+        var wordList = ['this','is','an','automatic','alert'];
         for (var i =0; i<5; i++){
-            //alert(wordList[i]);
+            alert(wordList[i]);
         }
-    
+    //b
+        var wordList = ['this','is','an','automatic','alert'];
+        for (var i =0; i<5; i++){
+            var lastL = wordList[i].length; 
+            var firstLetter = wordList[i].substring(0,1);
+            firstLetter = firstLetter.toUpperCase();
+            var restLetters = wordList[i].substring(1,lastL);
+            alert(firstLetter+restLetters);
+        }
+        
