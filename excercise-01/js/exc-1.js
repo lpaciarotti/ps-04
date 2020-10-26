@@ -75,4 +75,21 @@
                 alert("Greater than 5");
             }     
                 alert("Lower than 0,5");
-        
+    //b
+        var age = Math.random()*100;
+        console.log(age);
+        if (age<2){
+            alert("Bebe");
+        } else if (age<=12) {
+            alert("Nino");
+        } else if (age<=19) {
+            alert("Adolecente");
+        } else if (age<=30) {
+            alert("Joven");
+        } else if (age<=60) {
+            alert("Adulto");
+        } else if (age<=75) {
+            alert("Adulto mayor")
+        } else {
+            alert("Anciano");
+        }
