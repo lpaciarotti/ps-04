@@ -17,16 +17,16 @@
 //Excercise 2
     //a
         var team = 'Manchester';
-        console.log(team.toUpperCase());
+        team = team.toUpperCase();
     //b
         var adjective = 'Impressive';
         var newAdjective = adjective.substring(0,5);
-        
     //c
         var adjectiveC = 'Environmental';
-        var newAdjectiveC = adjectiveC.substring(10,13);
+        var newAdjectiveC = adjectiveC.substring((adjectiveC.length-3),(adjectiveC.length));
+        console.log(newAdjectiveC);
     //d
-        var teamD = 'anderlecht'
+        /*var teamD = 'anderlecht'
         var firstLetter = teamD.substring(0,1);
         firstLetter = firstLetter.toUpperCase();
         var restLetters = teamD.substring(1,10);
@@ -128,7 +128,7 @@
         c = suma(23916,12772);
         console.log(c);*/
     //b
-        /*function suma(a,b) {
+        function suma(a,b) {
             if (typeof a!='number'||typeof b!='number'){
                 alert('One or more parameters are not a number');
                 return Number.NaN;
@@ -137,7 +137,7 @@
             }
         }
         d = suma(23916,'12772');
-        console.log(d);*/
+        console.log(d);
     //c
         function validateInteger (j) {
             if (Number.isInteger(j)) {
