@@ -129,18 +129,15 @@
         console.log(c);*/
     //b
         function suma(a,b) {
-            if (typeof a !='number'){
-                //alert('One or more parameters are not a number');
-                return Number.NaN;
-            } else if(typeof b !='number') {
-                //alert('One or more parameters are not a number');
+            if (typeof a!='number'||typeof b!='number'){
+                alert('One or more parameters are not a number');
                 return Number.NaN;
             } else {
             return a+b;
             }
         }
         d = suma(23916,'12772');
-        //console.log(d);
+        console.log(d);
     //c
         function validateInteger (j) {
             if (Number.isInteger(j)) {
@@ -148,4 +145,23 @@
             }
             return 'False'
         }
-    
+    //d 
+        function suma(a,b) {
+            if (typeof a!='number'||typeof b!='number'){
+                alert('One or more parameters are not a number');
+                return Number.NaN;
+                } else if (validateInteger(a)!='True'&& validateInteger(b)!='True') {
+                    alert('Both numbers are not integers');
+                    return [Math.round(a),Math.round(b)];
+                } else if (validateInteger(a)!='True') {
+                    alert('Number a is not an integer');
+                    return Math.round(a);
+                } else if (validateInteger(b)!='True') {
+                    alert('Number b is not an integer');
+                    return Math.round(b);
+                } else {
+            return a+b;
+            }
+        }
+        console.log(suma(7,4.567));
+      
