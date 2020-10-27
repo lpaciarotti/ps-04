@@ -1,3 +1,3 @@
-In this work you will see the homepage of a newspaper done by me (Lautaro Paciarotti). For that I used HTML and CSS codes with a responsive design (mobile first).
+In this work you will see the same homepage of a newspaper done by me (Lautaro Paciarotti) in the PS-03, but now it is corrected acording to the tutor advices.
 On the following link you will see the website:
-https://lpaciarotti.github.io/veritas-news-portal/home.html
+https://lpaciarotti.github.io/ps-04/excercise-02/home.html
