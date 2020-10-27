@@ -24,9 +24,8 @@
     //c
         var adjectiveC = 'Environmental';
         var newAdjectiveC = adjectiveC.substring((adjectiveC.length-3),(adjectiveC.length));
-        console.log(newAdjectiveC);
     //d
-        /*var teamD = 'anderlecht'
+        var teamD = 'anderlecht'
         var firstLetter = teamD.substring(0,1);
         firstLetter = firstLetter.toUpperCase();
         var restLetters = teamD.substring(1,10);
@@ -45,8 +44,6 @@
         var lastL = uDegree.length;
         var restLetters2 = uDegree.substring(wSpace+2,lastL);
         var uDegreeCapital = firstLetter1+restLetters1+' '+firstLetter2+restLetters2;
-        console.log(uDegreeCapital);
-
 //Excercise 3
     //a
         var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
@@ -63,9 +60,8 @@
         months.pop();
     //e
         months = months.reverse();
-        console.log(months);
     //f
-        console.log(months.join('-'));
+        var allMonths = months.join('-');
     //g
         var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
         var monthsCopy = months.slice(4,11);
