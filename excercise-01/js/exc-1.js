@@ -128,7 +128,7 @@
         c = suma(23916,12772);
         console.log(c);*/
     //b
-        function suma(a,b) {
+        /*function suma(a,b) {
             if (typeof a!='number'||typeof b!='number'){
                 alert('One or more parameters are not a number');
                 return Number.NaN;
@@ -137,7 +137,7 @@
             }
         }
         d = suma(23916,'12772');
-        console.log(d);
+        console.log(d);*/
     //c
         function validateInteger (j) {
             if (Number.isInteger(j)) {
@@ -146,7 +146,7 @@
             return 'False'
         }
     //d 
-        function suma(a,b) {
+        /*function suma(a,b) {
             if (typeof a!='number'||typeof b!='number'){
                 alert('One or more parameters are not a number');
                 return Number.NaN;
@@ -163,5 +163,23 @@
             return a+b;
             }
         }
-        console.log(suma(7,4.567));
-      
+        console.log(suma(7,4.567));*/
+    //e
+        function validateNumber(p,q){
+            if (typeof p!='number'||typeof q!='number'){
+                alert('One or more parameters are not a number');
+                return 'No number';
+            } else {
+                return 'Both numbers';
+            }
+        }
+        function suma(a,b) {
+            var validation = validateNumber(a,b);
+            if (validation == 'No number') {
+                return Number.NaN;
+            } else {
+                return a+b;
+            }
+            }
+        dd = suma('23916',12772);
+        console.log(dd);
