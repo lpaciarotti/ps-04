@@ -46,12 +46,13 @@
         var uDegreeCapital = firstLetter1+restLetters1+' '+firstLetter2+restLetters2;
 //Excercise 3
     //a
-        var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-        console.log(months[4]);
-        console.log(months[10]);
+        var months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre',
+        'Noviembre', 'Diciembre'];
+        console.log('3.a.', months[4]);
+        console.log('3.a.', months[10]);
     //b
-        monts = months.sort();
-        console.log(months);
+        months = months.sort();
+        console.log('3.b.', months);
     //c
         months.unshift('Start');
         months.push('End');
@@ -63,38 +64,38 @@
     //f
         var allMonths = months.join('-');
     //g
-        var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+        var months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 
+        'Noviembre', 'Diciembre'];
         var monthsCopy = months.slice(4,11);
 //Excercise 4
     //a
         if (Math.random()>=0,5){
-                alert("Greater than 0,5");
+                alert('Greater than 0,5');
             } else {    
-                alert("Lower than 0,5");
+                alert('Lower than 0,5');
             }
     //b
         var age = Math.random()*100;
-        console.log(age);
         if (age<2){
-            alert("Bebe");
+            alert('Bebe');
         } else if (age<=12) {
-            alert("Nino");
+            alert('Nino');
         } else if (age<=19) {
-            alert("Adolecente");
+            alert('Adolecente');
         } else if (age<=30) {
-            alert("Joven");
+            alert('Joven');
         } else if (age<=60) {
-            alert("Adulto");
+            alert('Adulto');
         } else if (age<=75) {
-            alert("Adulto mayor")
+            alert('Adulto mayor')
         } else {
-            alert("Anciano");
+            alert('Anciano');
         }
 //Excercise 5
     //a
         var wordList = ['this','is','an','automatic','alert'];
         for (var i =0; i<5; i++){
-            //alert(wordList[i]);
+            alert(wordList[i]);
         }
     //b
         var wordList = ['this','is','an','automatic','alert'];
@@ -103,27 +104,27 @@
             var firstLetter = wordList[i].substring(0,1);
             firstLetter = firstLetter.toUpperCase();
             var restLetters = wordList[i].substring(1,lastL);
-            //alert(firstLetter+restLetters);
+            alert(firstLetter+restLetters);
         }
     //c
         var sentence = ' ';
         for (var i =0; i<5; i++){
             sentence= sentence+' '+wordList[i];
         }
-        //alert(sentence);
+        alert(sentence);
     //d
         var numberList = [];
         for (var i=0; i<10; i++){
             numberList[i]=i;
         }
-        console.log(numberList);
+        console.log('5.d.', numberList);
 //Excercise 6
     //a
-        /*function suma(a,b) {
+        function suma(a,b) {
             return a+b;
         }
         c = suma(23916,12772);
-        console.log(c);*/
+        console.log('6.a.', c);
     //b
         function suma(a,b) {
             if (typeof a!='number'||typeof b!='number'){
@@ -134,7 +135,6 @@
             }
         }
         d = suma(23916,'12772');
-        console.log(d);
     //c
         function validateInteger (j) {
             if (Number.isInteger(j)) {
@@ -143,7 +143,7 @@
             return 'False'
         }
     //d 
-        /*function suma(a,b) {
+        function suma(a,b) {
             if (typeof a!='number'||typeof b!='number'){
                 alert('One or more parameters are not a number');
                 return Number.NaN;
@@ -160,7 +160,7 @@
             return a+b;
             }
         }
-        console.log(suma(7,4.567));*/
+        suma(7,4.567);
     //e
         function validateNumber(p,q){
             if (typeof p!='number'||typeof q!='number'){
@@ -178,5 +178,5 @@
                 return a+b;
             }
             }
-        dd = suma('23916',12772);
-        console.log(dd);
+        suma('23916',12772);
+        

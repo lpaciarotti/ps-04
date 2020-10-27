@@ -1,0 +1,1 @@
+In the file exc-1.js you will se the answers to the PS-04 related to Javascript activities (Excercise 1)
