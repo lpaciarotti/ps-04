@@ -79,17 +79,25 @@
 
 //Telephone validation
 
-var telephoneInput='4483235';
-var telephoneLength = telephoneInput.length;
-var wrngChar = 0;
-console.log(telephoneLength);
+// var telephoneInput='4483235';
+// var telephoneLength = telephoneInput.length;
+// var wrngChar = 0;
+// console.log(telephoneLength);
 
-for (var i=0;i<=telephoneLength;i++) {
-    if (telephoneInput[i]==' '||telephoneInput[i]=='-'||telephoneInput[i]=='('||telephoneInput[i]==')') {
-        wrngChar++;
-    }
-}
+// for (var i=0;i<=telephoneLength;i++) {
+//     if (telephoneInput[i]==' '||telephoneInput[i]=='-'||telephoneInput[i]=='('||telephoneInput[i]==')') {
+//         wrngChar++;
+//     }
+// }
 
-if (wrngChar>0||telephoneLength<7) {
-    alert('Telephone must have at least 7 characters and not cointain "(" ")" "-" or spaces');
-}
+// if (wrngChar>0||telephoneLength<7) {
+//     alert('Telephone must have at least 7 characters and not cointain "(" ")" "-" or spaces');
+// }
+
+//Adress Validation
+var adressInput = 'Callao 212' ;
+console.log(adressInput);
+console.log(adressInput.indexOf(' '));
+    if (adressInput.length< 5 || adressInput.indexOf(' ')<=0) {
+        alert('Adress must have 5 or more characters and at least one space');
+        }
