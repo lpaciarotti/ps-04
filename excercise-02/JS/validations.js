@@ -31,6 +31,40 @@ window.onload = function() {
         }
     }
 
+    //Password validation
+
+    var passInput = document.getElementById('pass-item');
+    var numQty = 0;
+    var letQty = 0;
+    var othQty = -1;
+    passInput.onblur = function(e) {
+        var passLength = passInput.value.length;
+        for (var i=0; i<=passLength; i++) {
+            if (passInput.value[i]>=0 && passInput.value[i]<=9) {
+                numQty++;
+            } else if ((passInput.value[i]>= 'a' && passInput.value[i]<= 'z')||(passInput.value[i]>= 'A' && passInput.value[i]<= 'Z')) {
+                letQty++;
+            } else {
+                othQty++;
+            }
+        }
+        console.log('numQty',numQty);
+        console.log('letQty',letQty);
+        console.log('othQty',othQty);
+        if (numQty==0||letQty==0||numQty+letQty<8||othQty>0){
+            passInput.insertAdjacentHTML('afterend','Password must have at least 8 characters and just numbers and leters');
+        }
+    }
+
+    //Repeat password validation
+    
+    var rPassInput = document.getElementById('rpass-item');
+    rPassInput.onblur = function(e) {
+        if (rPassInput.value!=passInput.value) {
+            rPassInput.insertAdjacentHTML('afterend','The password doesn\'t match');
+        }
+    }
+
     // form.onsubmit = function(e) {
     //     if (nameInput.value.length<= 6 || nameInput.value.indexOf(' ')<=0){
     //         e.preventDefault();

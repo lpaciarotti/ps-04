@@ -27,7 +27,7 @@
     font-style: italic;
 }
 
-.form-item, #name-item, #email-item{
+.form-item, #name-item, #email-item, #pass-item, #rpass-item{
     width: 90%;
     margin-top: 0;
     margin-left: 10px;
