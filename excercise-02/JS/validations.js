@@ -1,40 +1,46 @@
 //VALIDATION FUNCTIONS
 
-//Name validation
+window.onload = function() {
+    var form = document.querySelector('form');
+    var submit = document.getElementsByClassName('submit-btn');
+    var para = document.querySelector('p');
 
-// window.onload = function() {
-//     var nameInput = document.getElementsByClassName('form-item');
-//     nameInput = nameInput[0].value;
-// // var nameInput = 'Manuela Gómez' ;
-//  //console.log(nameInput);
-// // console.log(nameInput.indexOf(' '));
-//     if (nameInput.length<= 6 || nameInput.indexOf(' ')<=0) {
-//         alert('The name should have 6 or more characters and at least one space');
-//         }
-// }
+    //Name validation
+    var nameInput = document.getElementById('name-item'); 
+    nameInput.onblur = function(e) {
+        if (nameInput.value.length<= 6 || nameInput.value.indexOf(' ')<=0){
+            e.preventDefault();
+            nameInput.insertAdjacentHTML('afterend','The name should have 6 or more characters and at least one space');
+        }
+    }
+    
+    //Email validation
+    var emailInput = document.getElementById('email-item');
+    emailInput.onblur = function(e) {
+        var emailLength = emailInput.value.length;
+        var atExistent = 0;
+        for (var i=0; i<=emailLength; i++) {
+            if (emailInput.value[i]=='@') {
+                atExistent++;
+            }
+        }
+        var dotCom = emailInput.value.substring(emailLength-4,emailLength);
 
-//Email validation
+        if ((atExistent==0 || atExistent > 1)||dotCom != '.com') {
+            emailInput.insertAdjacentHTML('afterend','Insert a valid email format: soomebody@smth.com');
+        }
+    }
 
-// var emailInput = 'alguien@mail.com';
-// var emailLength = emailInput.length;
-// console.log(emailInput);
-
-// var atExistent = 0;
-
-// for (var i=0; i<=emailLength; i++) {
-//     if (emailInput[i]=='@') {
-//         atExistent++;
-//     }
-// }
-
-// var dotCom = emailInput.substring(emailLength-4,emailLength);
-
-// console.log(atExistent);
-// console.log(dotCom);
-
-// if ((atExistent==0 || atExistent > 1)||dotCom != '.com') {
-//     alert('Insert a valid email format: soomebody@smth.com');
-// }
+    // form.onsubmit = function(e) {
+    //     if (nameInput.value.length<= 6 || nameInput.value.indexOf(' ')<=0){
+    //         e.preventDefault();
+    //         alert('The name should have 6 or more characters and at least one space');
+    //     }
+    //     if ((atExistent==0 || atExistent > 1)||dotCom != '.com') {
+    //         emailInput.insertAdjacentHTML('afterend','Insert a valid email format: soomebody@smth.com');
+    //     }
+    // }
+}
 
 //Password validation
 
