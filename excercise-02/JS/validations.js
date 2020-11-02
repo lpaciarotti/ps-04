@@ -108,3 +108,11 @@
 // if (cityInput.length<3) {
 //     alert('City must have at least 3 characters');
 // }
+
+//ZIP Code validation
+
+// var zipInput = 'Nn';
+// if (zipInput.length<3) {
+//     alert('ZIP code must have at least 3 characters');
+// }
+
