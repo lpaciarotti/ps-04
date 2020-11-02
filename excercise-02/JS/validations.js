@@ -95,9 +95,16 @@
 // }
 
 //Adress Validation
-var adressInput = 'Callao 212' ;
-console.log(adressInput);
-console.log(adressInput.indexOf(' '));
-    if (adressInput.length< 5 || adressInput.indexOf(' ')<=0) {
-        alert('Adress must have 5 or more characters and at least one space');
-        }
+// var adressInput = 'Callao 212' ;
+// console.log(adressInput);
+// console.log(adressInput.indexOf(' '));
+//     if (adressInput.length< 5 || adressInput.indexOf(' ')<=0) {
+//         alert('Adress must have 5 or more characters and at least one space');
+//         }
+
+//City validation
+
+// var cityInput = 'Nn';
+// if (cityInput.length<3) {
+//     alert('City must have at least 3 characters');
+// }
