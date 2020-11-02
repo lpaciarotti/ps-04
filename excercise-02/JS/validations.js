@@ -116,3 +116,10 @@
 //     alert('ZIP code must have at least 3 characters');
 // }
 
+//DNI validation
+
+// var dniInput = 'Nn';
+// if (dni.length<7||dni.length>8) {
+//     alert('DNI must have 7 or 8 characters');
+// }
+
