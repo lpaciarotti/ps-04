@@ -7,15 +7,21 @@ window.onload = function() {
 
     //Name validation
     var nameInput = document.getElementById('name-item'); 
+    var message = document.getElementById('message');
     nameInput.onblur = function(e) {
         if (nameInput.value.length<= 6 || nameInput.value.indexOf(' ')<=0){
             e.preventDefault();
-            nameInput.insertAdjacentHTML('afterend','The name should have 6 or more characters and at least one space');
+            message.textContent = 'The name must have at least 6 characters and one space';
         }
     }
+    nameInput.onfocus = function(e) {
+        message.textContent=' ';
+    }
     
+
     //Email validation
     var emailInput = document.getElementById('email-item');
+    var emailMessage = document.getElementById('email-message');
     emailInput.onblur = function(e) {
         var emailLength = emailInput.value.length;
         var atExistent = 0;
@@ -27,12 +33,16 @@ window.onload = function() {
         var dotCom = emailInput.value.substring(emailLength-4,emailLength);
 
         if ((atExistent==0 || atExistent > 1)||dotCom != '.com') {
-            emailInput.insertAdjacentHTML('afterend','Insert a valid email format: soomebody@smth.com');
+            emailMessage.textContent = 'Insert a valid email format: soomebody@smth.com';
         }
+    }
+    emailInput.onfocus = function(e) {
+        emailMessage.textContent=' ';
     }
 
     //Password validation
     var passInput = document.getElementById('pass-item');
+    var passMessage = document.getElementById('pass-message');
     var numQty = 0;
     var letQty = 0;
     var othQty = -1;
@@ -48,8 +58,11 @@ window.onload = function() {
             }
         }
         if (numQty==0||letQty==0||numQty+letQty<8||othQty>0){
-            passInput.insertAdjacentHTML('afterend','Password must have at least 8 characters and just numbers and leters');
+            passMessage.textContent = 'Password must have at least 8 characters and just numbers and leters';;
         }
+    }
+    passInput.onfocus = function(e) {
+        passMessage.textContent=' ';
     }
 
     //Repeat password validation
