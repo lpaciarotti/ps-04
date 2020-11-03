@@ -34,6 +34,14 @@
     padding-top: 0;
 }
 
+#message, #email-message, #pass-message, #rpass-message, #age-message, #tel-message, #adress-message, #city-message, #zip-message, #dni-message {
+    margin-left: 10px;
+    padding-top: 3px;
+    font-style: italic;
+    color: #ff0000;
+    font-size: 10px;
+}
+
 .submit-btn {
     margin-top: 10px;
     margin-bottom: 10px;
