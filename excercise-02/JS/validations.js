@@ -58,7 +58,7 @@ window.onload = function() {
             }
         }
         if (numQty==0||letQty==0||numQty+letQty<8||othQty>0){
-            passMessage.textContent = 'Password must have at least 8 characters and just numbers and leters';;
+            passMessage.textContent = 'Password must have at least 8 characters and just numbers and leters';
         }
     }
     passInput.onfocus = function(e) {
@@ -67,19 +67,27 @@ window.onload = function() {
 
     //Repeat password validation
         var rPassInput = document.getElementById('rpass-item');
+        var rpassMessage = document.getElementById('rpass-message');
     rPassInput.onblur = function(e) {
         if (rPassInput.value!=passInput.value) {
-            rPassInput.insertAdjacentHTML('afterend','The password doesn\'t match');
+            rpassMessage.textContent = 'The password doesn\'t match';
         }
+    }
+    rPassInput.onfocus = function(e) {
+        rpassMessage.textContent =' ';
     }
 
     //Age validation
     var ageInput = document.getElementById('age-item');
+    var ageMessage = document.getElementById('age-message');
     ageInput.onblur = function(e) {
         ageNumber = parseFloat(ageInput.value);
         if (!(Number.isInteger(ageNumber))||ageNumber<18) {
-        ageInput.insertAdjacentText('afterend','Age must be an integer and more or equal to 18'); 
+        ageMessage.textContent = 'Age must be an integer and more or equal to 18'; 
        }
+    }
+    ageInput.onfocus = function(e) {
+        ageMessage.textContent = ' ';
     }
 
     
@@ -87,6 +95,7 @@ window.onload = function() {
 
     var telephoneInput = document.getElementById('telephone-item');
     var wrngChar = 0;
+    var telMessage = document.getElementById('tel-message');
     telephoneInput.onblur = function(e) {
         var telephoneLength = telephoneInput.value.length;
         console.log(telephoneLength);
@@ -98,41 +107,59 @@ window.onload = function() {
         }
 
         if (wrngChar>0||telephoneLength<7) {
-            telephoneInput.insertAdjacentText('afterend','Telephone must have at least 7 characters and not cointain "(" ")" "-" or spaces');
+            telMessage.textContent = 'Telephone must have at least 7 characters and not cointain "(" ")" "-" or spaces';
         }
     }
+    telephoneInput.onfocus = function(e) {
+        telMessage.textContent = ' ';
+    }
+
     //Adress Validation
     var adressInput = document.getElementById('adress-item');
+    var adressMessage = document.getElementById('adress-message');
     adressInput.onblur = function(e) {
         if (adressInput.value.length< 5 || adressInput.value.indexOf(' ')<=0) {
-            adressInput.insertAdjacentText('afterend','Adress must have 5 or more characters and at least one space');
+            adressMessage.textContent = 'Adress must have 5 or more characters and at least one space';
             }    
+    }
+    adressInput.onfocus = function(e) {
+        adressMessage.textContent = ' ';
     }
 
     //City validation
     var cityInput = document.getElementById('city-item');
+    var cityMessage = document.getElementById('city-message');
     cityInput.onblur = function(e) {
         if (cityInput.value.length<3) {
-            cityInput.insertAdjacentText('afterend','City must have at least 3 characters');
+            cityMessage.textContent = 'City must have at least 3 characters';
         }
+    }
+    cityInput.onfocus = function(e) {
+        cityMessage.textContent = ' ';
     }
 
     //ZIP Code validation
     var zipInput = document.getElementById('zip-item');
+    var zipMessage = document.getElementById('zip-message');
     zipInput.onblur = function(e) {
         if (zipInput.value.length<3) {
-            zipInput.insertAdjacentText('afterend','ZIP code must have at least 3 characters');
+            zipMessage.textContent = 'ZIP code must have at least 3 characters';
         }
     }
-
+    zipInput.onfocus = function(e) {
+        zipMessage.textContent = ' ';
+    }
     //DNI validation
     var dniInput = document.getElementById('dni-item');
+    var dniMessage = document.getElementById('dni-message');
     dniInput.onblur = function(e) {
         if (dniInput.value.length<7||dniInput.value.length>8) {
-            dniInput.insertAdjacentText('afterend','DNI must have 7 or 8 characters');
+            dniMessage.textContent = 'DNI must have 7 or 8 characters';
         }
     }
-
+    dniInput.onfocus = function(e) {
+        dniMessage.textContent = ' ';
+    }
     
 
     // form.onsubmit = function(e) {
