@@ -96,6 +96,20 @@ window.onload = function() {
             }    
     }
 
+    //City validation
+    var cityInput = document.getElementById('city-item');
+    cityInput.onblur = function(e) {
+        if (cityInput.value.length<3) {
+            cityInput.insertAdjacentText('afterend','City must have at least 3 characters');
+        }
+    //ZIP Code validation
+
+// var zipInput = 'Nn';
+// if (zipInput.length<3) {
+//     alert('ZIP code must have at least 3 characters');
+// }
+    }
+
     // form.onsubmit = function(e) {
     //     if (nameInput.value.length<= 6 || nameInput.value.indexOf(' ')<=0){
     //         e.preventDefault();
@@ -112,19 +126,9 @@ window.onload = function() {
 
 
 
-//City validation
 
-// var cityInput = 'Nn';
-// if (cityInput.length<3) {
-//     alert('City must have at least 3 characters');
-// }
 
-//ZIP Code validation
 
-// var zipInput = 'Nn';
-// if (zipInput.length<3) {
-//     alert('ZIP code must have at least 3 characters');
-// }
 
 //DNI validation
 
