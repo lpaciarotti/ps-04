@@ -87,7 +87,14 @@ window.onload = function() {
         if (wrngChar>0||telephoneLength<7) {
             telephoneInput.insertAdjacentText('afterend','Telephone must have at least 7 characters and not cointain "(" ")" "-" or spaces');
         }
-    }    
+    }
+    //Adress Validation
+    var adressInput = document.getElementById('adress-item');
+    adressInput.onblur = function(e) {
+        if (adressInput.value.length< 5 || adressInput.value.indexOf(' ')<=0) {
+            adressInput.insertAdjacentText('afterend','Adress must have 5 or more characters and at least one space');
+            }    
+    }
 
     // form.onsubmit = function(e) {
     //     if (nameInput.value.length<= 6 || nameInput.value.indexOf(' ')<=0){
@@ -103,13 +110,7 @@ window.onload = function() {
 
 
 
-//Adress Validation
-// var adressInput = 'Callao 212' ;
-// console.log(adressInput);
-// console.log(adressInput.indexOf(' '));
-//     if (adressInput.length< 5 || adressInput.indexOf(' ')<=0) {
-//         alert('Adress must have 5 or more characters and at least one space');
-//         }
+
 
 //City validation
 
