@@ -102,13 +102,25 @@ window.onload = function() {
         if (cityInput.value.length<3) {
             cityInput.insertAdjacentText('afterend','City must have at least 3 characters');
         }
-    //ZIP Code validation
-
-// var zipInput = 'Nn';
-// if (zipInput.length<3) {
-//     alert('ZIP code must have at least 3 characters');
-// }
     }
+
+    //ZIP Code validation
+    var zipInput = document.getElementById('zip-item');
+    zipInput.onblur = function(e) {
+        if (zipInput.value.length<3) {
+            zipInput.insertAdjacentText('afterend','ZIP code must have at least 3 characters');
+        }
+    }
+
+    //DNI validation
+    var dniInput = document.getElementById('dni-item');
+    dniInput.onblur = function(e) {
+        if (dniInput.value.length<7||dniInput.value.length>8) {
+            dniInput.insertAdjacentText('afterend','DNI must have 7 or 8 characters');
+        }
+    }
+
+    
 
     // form.onsubmit = function(e) {
     //     if (nameInput.value.length<= 6 || nameInput.value.indexOf(' ')<=0){
@@ -130,10 +142,4 @@ window.onload = function() {
 
 
 
-//DNI validation
-
-// var dniInput = 'Nn';
-// if (dni.length<7||dni.length>8) {
-//     alert('DNI must have 7 or 8 characters');
-// }
 
