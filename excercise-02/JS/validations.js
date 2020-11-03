@@ -45,7 +45,8 @@ window.onload = function() {
         for (var i=0; i<=passLength; i++) {
             if (passInput.value[i]>=0 && passInput.value[i]<=9) {
                 numQty++;
-            } else if ((passInput.value[i]>= 'a' && passInput.value[i]<= 'z')||(passInput.value[i]>= 'A' && passInput.value[i]<= 'Z')) {
+            } else if ((passInput.value[i]>= 'a' && passInput.value[i]<= 'z')||(passInput.value[i]>= 'A' &&
+            passInput.value[i]<= 'Z')) {
                 letQty++;
             } else {
                 othQty++;
@@ -88,7 +89,8 @@ window.onload = function() {
     telephoneInput.onblur = function(e) {
         var telephoneLength = telephoneInput.value.length;
         for (var i=0;i<=telephoneLength;i++) {
-            if (telephoneInput.value[i]==' '||telephoneInput.value[i]=='-'||telephoneInput.value[i]=='('||telephoneInput.value[i]==')') {
+            if (telephoneInput.value[i]==' '||telephoneInput.value[i]=='-'||telephoneInput.value[i]=='('||telephoneInput.value[i]==
+            ')') {
                 wrngChar++;
             }
         }
@@ -146,11 +148,19 @@ window.onload = function() {
     //Validations when submit button is clicked
     form.onsubmit = function(e) {
         //No wrong data
-        if (message.textContent == ' ' && emailMessage.textContent == ' ' && passMessage.textContent == ' ' &&rpassMessage.textContent == ' ' && ageMessage.textContent == ' ' && telMessage.textContent == ' ' && adressMessage.textContent == ' ' && cityMessage.textContent == ' ' && zipMessage.textContent == ' ' && dniMessage.textContent ==' ') {
-                alert('Information loaded succesfully:' + '\n' + 'Name: ' + nameInput.value + '\n' + 'Email: '+ emailInput.value + '\n' + 'Password: ' + passInput.value + '\n' + 'Age: ' + ageInput.value + '\n'+ 'Telephone: ' + telephoneInput.value + '\n' + 'Adress: ' + adressInput.value + '\n' + 'City: ' + cityInput.value + '\n' + 'ZIP Code: ' + zipInput.value + '\n' + 'DNI: ' + dniInput.value);
+        if (message.textContent == ' ' && emailMessage.textContent == ' ' && passMessage.textContent == ' ' &&
+        rpassMessage.textContent == ' ' && ageMessage.textContent == ' ' && telMessage.textContent == ' ' &&
+        adressMessage.textContent == ' ' && cityMessage.textContent == ' ' && zipMessage.textContent == ' ' &&
+        dniMessage.textContent ==' ') {
+                alert('Information loaded succesfully:' + '\n' + 'Name: ' + nameInput.value + '\n' + 'Email: '+
+                emailInput.value + '\n' + 'Password: ' + passInput.value + '\n' + 'Age: ' + ageInput.value + '\n'+
+                'Telephone: ' + telephoneInput.value + '\n' + 'Adress: ' + adressInput.value + '\n' + 'City: ' +
+                cityInput.value + '\n' + 'ZIP Code: ' + zipInput.value + '\n' + 'DNI: ' + dniInput.value);
         } else {
             alert('One or more fields have errors:' + '\n' + message.textContent +
-            emailMessage.textContent + passMessage.textContent + rpassMessage.textContent + ageMessage.textContent + telMessage.textContent + adressMessage.textContent + cityMessage.textContent + zipMessage.textContent +  dniMessage.textContent);
+            emailMessage.textContent + passMessage.textContent + rpassMessage.textContent + ageMessage.textContent +
+            telMessage.textContent + adressMessage.textContent + cityMessage.textContent + zipMessage.textContent +
+            dniMessage.textContent);
         }
     }
 }
