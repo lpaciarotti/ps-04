@@ -69,6 +69,26 @@ window.onload = function() {
        }
     }
 
+    
+    //Telephone validation
+
+    var telephoneInput = document.getElementById('telephone-item');
+    var wrngChar = 0;
+    telephoneInput.onblur = function(e) {
+        var telephoneLength = telephoneInput.value.length;
+        console.log(telephoneLength);
+
+        for (var i=0;i<=telephoneLength;i++) {
+            if (telephoneInput.value[i]==' '||telephoneInput.value[i]=='-'||telephoneInput.value[i]=='('||telephoneInput.value[i]==')') {
+                wrngChar++;
+            }
+        }
+
+        if (wrngChar>0||telephoneLength<7) {
+            telephoneInput.insertAdjacentText('afterend','Telephone must have at least 7 characters and not cointain "(" ")" "-" or spaces');
+        }
+    }    
+
     // form.onsubmit = function(e) {
     //     if (nameInput.value.length<= 6 || nameInput.value.indexOf(' ')<=0){
     //         e.preventDefault();
@@ -81,29 +101,7 @@ window.onload = function() {
 }
 
 
-//Age validation
 
-// var ageInput = 23;
-// if (!Number.isInteger(ageInput)||ageInput<18) {
-//     alert('Age must be an integer and more or equal to 18');
-// }
-
-//Telephone validation
-
-// var telephoneInput='4483235';
-// var telephoneLength = telephoneInput.length;
-// var wrngChar = 0;
-// console.log(telephoneLength);
-
-// for (var i=0;i<=telephoneLength;i++) {
-//     if (telephoneInput[i]==' '||telephoneInput[i]=='-'||telephoneInput[i]=='('||telephoneInput[i]==')') {
-//         wrngChar++;
-//     }
-// }
-
-// if (wrngChar>0||telephoneLength<7) {
-//     alert('Telephone must have at least 7 characters and not cointain "(" ")" "-" or spaces');
-// }
 
 //Adress Validation
 // var adressInput = 'Callao 212' ;
