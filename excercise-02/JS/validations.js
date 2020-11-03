@@ -32,7 +32,6 @@ window.onload = function() {
     }
 
     //Password validation
-
     var passInput = document.getElementById('pass-item');
     var numQty = 0;
     var letQty = 0;
@@ -48,21 +47,26 @@ window.onload = function() {
                 othQty++;
             }
         }
-        console.log('numQty',numQty);
-        console.log('letQty',letQty);
-        console.log('othQty',othQty);
         if (numQty==0||letQty==0||numQty+letQty<8||othQty>0){
             passInput.insertAdjacentHTML('afterend','Password must have at least 8 characters and just numbers and leters');
         }
     }
 
     //Repeat password validation
-    
-    var rPassInput = document.getElementById('rpass-item');
+        var rPassInput = document.getElementById('rpass-item');
     rPassInput.onblur = function(e) {
         if (rPassInput.value!=passInput.value) {
             rPassInput.insertAdjacentHTML('afterend','The password doesn\'t match');
         }
+    }
+
+    //Age validation
+    var ageInput = document.getElementById('age-item');
+    ageInput.onblur = function(e) {
+        ageNumber = parseFloat(ageInput.value);
+        if (!(Number.isInteger(ageNumber))||ageNumber<18) {
+        ageInput.insertAdjacentText('afterend','Age must be an integer and more or equal to 18'); 
+       }
     }
 
     // form.onsubmit = function(e) {
@@ -76,39 +80,6 @@ window.onload = function() {
     // }
 }
 
-//Password validation
-
-// var passInput ='abcd1234'
-// console.log(passInput);
-// var passLength = passInput.length;
-// console.log(passLength);
-
-// var numQty = 0;
-// var letQty = 0;
-// var othQty = -1;
-
-// for (var i=0; i<=passLength; i++) {
-//     if (passInput[i]>=0 && passInput[i]<=9) {
-//         numQty++;
-//     } else if ((passInput[i]>= 'a' && passInput[i]<= 'z')||(passInput[i]>= 'A' && passInput[i]<= 'Z')) {
-//         letQty++;
-//     } else {
-//         othQty++;
-//     }
-// }
-
-// console.log('numQty',numQty);
-// console.log('letQty',letQty);
-// console.log('othQty',othQty);
-// console.log(typeof(passInput[0]));
-// if (numQty+letQty<8||othQty>0){
-//     alert('Password should have at least 8 characters and just numbers and leters');
-// }
-
-// var rPassInput = 'abcd1234'
-// if (rPassInput!=passInput) {
-//     alert('The password doesn\'t match');
-// }
 
 //Age validation
 
